@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            table{
+                border-collapse: collapse;
+                width: 100px;
+            }
+            th,td{
+                border: 2px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+        </style>
+        <script>
+           var Employees=[{empid:1,ename:"anirudha",sal:12000},
+           {empid:2,ename:"anirufdds",sal:12000},
+           {empid:3,ename:"anigrreha",sal:12000},
+           {empid:4,ename:"argergdha",sal:12000}];
+
+           var str='';
+
+           function displayTable(){
+            str=" <table><tr><th></th></tr></table> "
+           }
+        </script>
+    </head>
+    <body>
+        <form >
+            Enter id: <input type="text" name="id" id="id"><span>*</span><span id="err"></span><br>
+            Enter Name: <input type="text" name="nm" id="nm"><span>*</span><span id="err1"></span><br>
+            Enter salary: <input type="text" name="sal" id="sal"><span>*</span><span id="err2"></span><br>
+            <button type="button" name="btn" id="btn" value="btn" onclick="">Add Employee</button>
+        </form>
+    </body>
+</html>
